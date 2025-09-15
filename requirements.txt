@@ -1,5 +1,6 @@
 langchain==0.3.27
 langchain_google_genai==2.1.10
 langchain_huggingface==0.3.1
+langchain-community==0.3.29
 langgraph==0.6.7
 streamlit==1.49.1

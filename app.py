@@ -10,7 +10,8 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 
 from langgraph.graph import StateGraph, END
 from typing import TypedDict, List, Literal
-
+from dotenv import load_dotenv
+load_dotenv(override=True)
 
 FAISS_DIR = os.getenv("FAISS_DIR", os.path.join(os.getcwd(), "faiss_index"))
 EMBEDDING_MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
@@ -32,8 +33,7 @@ def make_gemini_llm(temperature: float = 0.2):
     api_key = os.getenv("GEMINI_API_KEY")
     if not api_key:
         raise ValueError("❌ GEMINI_API_KEY environment variable not set.")
-    os.environ["GEMINI_API_KEY"] = api_key
-    return ChatGoogleGenerativeAI(model=GEMINI_MODEL_NAME, temperature=temperature)
+    return ChatGoogleGenerativeAI(model=GEMINI_MODEL_NAME,api_key=api_key, temperature=temperature)
 
 def build_system_prompt():
     return (

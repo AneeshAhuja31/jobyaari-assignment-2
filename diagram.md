@@ -75,34 +75,7 @@ graph TD
     PP --> QQ[Final Response]
     QQ --> RR[Streamlit Chat Interface]
 
-    %% Styling
-    classDef scraping fill:#f0f8ff,stroke:#1976d2,stroke-width:2px;
-    classDef data fill:#fffde7,stroke:#fbc02d,stroke-width:2px;
-    classDef embedding fill:#e8f5e9,stroke:#388e3c,stroke-width:2px;
-    classDef chatbot fill:#f3e5f5,stroke:#8e24aa,stroke-width:2px;
-    classDef llm fill:#ffebee,stroke:#d32f2f,stroke-width:2px;
+    %% Black and White Styling
+    classDef bw fill:#fff,stroke:#000,stroke-width:2px,color:#000;
 
-    class G,H,I,J,O,P,Q,R scraping
-    class K,L,M,N,S,T,U,V,W,X,Y,Z data
-    class AA,BB,CC,DD,EE,FF,GG embedding
-    class HH,II,JJ,KK,LL,MM,NN,OO,RR chatbot
-    class PP llm
-```
-
-## Architecture Components
-
-### 🕷️ **Data Collection Phase**
-- Selenium-based scrapers for each job category
-- Batch processing for detailed job extraction
-- JSON storage organized by category
-
-### 🔄 **Data Processing Phase** 
-- Document creation with LangChain
-- HuggingFace embeddings generation
-- FAISS/MongoDB vector storage
-
-### 🤖 **Chatbot Phase**
-- LangGraph workflow orchestration
-- Intelligent query routing
-- RAG implementation with vector search
-- Gemini LLM integration
+    class A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,AA,BB,CC,DD,EE,FF,GG,HH,II,JJ,KK,LL,MM,NN,OO,PP,QQ,RR bw

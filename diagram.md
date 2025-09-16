@@ -76,11 +76,11 @@ graph TD
     QQ --> RR[Streamlit Chat Interface]
 
     %% Styling
-    classDef scraping fill:#e1f5fe
-    classDef data fill:#f3e5f5
-    classDef embedding fill:#e8f5e8
-    classDef chatbot fill:#fff3e0
-    classDef llm fill:#ffebee
+    classDef scraping fill:#f0f8ff,stroke:#1976d2,stroke-width:2px;
+    classDef data fill:#fffde7,stroke:#fbc02d,stroke-width:2px;
+    classDef embedding fill:#e8f5e9,stroke:#388e3c,stroke-width:2px;
+    classDef chatbot fill:#f3e5f5,stroke:#8e24aa,stroke-width:2px;
+    classDef llm fill:#ffebee,stroke:#d32f2f,stroke-width:2px;
 
     class G,H,I,J,O,P,Q,R scraping
     class K,L,M,N,S,T,U,V,W,X,Y,Z data
